@@ -1,23 +1,28 @@
 package com.digitalmaking.manager.model;
+
 import java.io.Serializable;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.GeneratedValue;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Column;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 
 @Entity
 public class Employee implements Serializable {
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String name;
     private String email;
     private String jobTitle;
     private String phone;
     private String imageUrl;
-    @Column(nullable=false, updatable=false)
+    @Column(nullable = false, updatable = false)
     private String employeeCode;
 
-    public Employee(Long id, String name, String email, String jobTitle, String phone, String imageUrl, String employeeCode) {
+    public Employee(Long id, String name, String email, String jobTitle, String phone, String imageUrl,
+            String employeeCode) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -124,19 +129,18 @@ public class Employee implements Serializable {
     public void setEmployeeCode(String employeeCode) {
         this.employeeCode = employeeCode;
     }
-    
 
     @Override
     public String toString() {
         return "{" +
-            " id='" + getId() + "'" +
-            ", name='" + getName() + "'" +
-            ", email='" + getEmail() + "'" +
-            ", jobTitle='" + getJobTitle() + "'" +
-            ", phone='" + getPhone() + "'" +
-            ", imageUrl='" + getImageUrl() + "'" +
-            ", employeeCode='" + getEmployeeCode() + "'" +
-            "}";
+                " id='" + getId() + "'" +
+                ", name='" + getName() + "'" +
+                ", email='" + getEmail() + "'" +
+                ", jobTitle='" + getJobTitle() + "'" +
+                ", phone='" + getPhone() + "'" +
+                ", imageUrl='" + getImageUrl() + "'" +
+                ", employeeCode='" + getEmployeeCode() + "'" +
+                "}";
     }
 
 }
