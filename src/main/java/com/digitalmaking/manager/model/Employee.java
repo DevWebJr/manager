@@ -1,36 +1,29 @@
 package com.digitalmaking.manager.model;
 
+import jakarta.persistence.*;
+
 import java.io.Serializable;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-
 @Entity
+@Table(name="employee")
 public class Employee implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(name="name")
     private String name;
+    @Column(name="email")
     private String email;
+    @Column(name="job_title")
     private String jobTitle;
+    @Column(name="phone")
     private String phone;
+    @Column(name="image_url")
     private String imageUrl;
-    @Column(nullable = false, updatable = false)
+    @Column(name="employee_code", nullable = false, updatable = false)
     private String employeeCode;
 
-    public Employee(Long id, String name, String email, String jobTitle, String phone, String imageUrl,
-            String employeeCode) {
-        this.id = id;
-        this.name = name;
-        this.email = email;
-        this.jobTitle = jobTitle;
-        this.phone = phone;
-        this.imageUrl = imageUrl;
-        this.employeeCode = employeeCode;
-    }
+    public Employee() {}
 
     /**
      * @return Long return the id
