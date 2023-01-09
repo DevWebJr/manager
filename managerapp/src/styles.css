@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  font-family: Roboto, Helvetica, sans-serif;
+  color: #f5f6fa;
+  background-color: #273c75;
+}
+body {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.classic{
+  display: flex;
+  justify-content: center;
+  margin: 1vw;
+  flex-wrap: wrap;
+}
+.boxes{
+  margin: .3vw;
+  background-color: #192a56;
+  padding: .15vw;
+  border:3px solid #f5f6fa;
+  border-radius: 15px;
+  min-height: 27vw;
+  max-height: 27vw;
+  min-width: 20vw;
+  max-width: 20vw;
+}
+.customized-picture{
+  border-radius: 15px;
+  border-bottom: 1px solid #f5f6fa;
+  min-height: 17vw;
+  max-height: 17vw;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.customized-picture-line{
+  background-color: #192a56;
+  font-size: 1em;
+  font-weight: bolder;
+  text-align: center;
+  color: #dcdde1;
+}

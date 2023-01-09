@@ -1,0 +1,49 @@
+[
+    {
+        "name": "Iron Man",
+        "email": "tonystark@gmail.com",
+        "imageUrl": "https://static.wikia.nocookie.net/ironman/images/c/c6/STL097606.jpg/revision/latest?cb=20191117212158",
+        "jobTitle": "Iron Man",
+        "phone": "+33111000111"
+    }
+    ,
+    {
+        "name": "Captain America",
+        "email": "steverogers@gmail.com",
+        "imageUrl": "https://sportshub.cbsistatic.com/i/2021/04/10/c46a47bb-3334-4f68-a2c6-0e1e061b0898/king-in-black-captain-america-1255688.jpg",
+        "jobTitle": "Captain America",
+        "phone": "+33222000222"
+    }
+    ,
+    {
+        "name": "Hulk",
+        "email": "brucebanner@gmail.com",
+        "imageUrl": "https://cdn.mos.cms.futurecdn.net/ggoUJ4fSQPZLHbBGHLj8F6.jpg",
+        "jobTitle": "Hulk",
+        "phone": "+33333000333"
+    }
+    ,
+    {
+        "name": "Thor",
+        "email": "thorodinson@gmail.com",
+        "imageUrl": "https://static.wikia.nocookie.net/heros/images/b/bd/Thor_Comics_Infobox.jpg/revision/latest?cb=20200622055921&path-prefix=fr",
+        "jobTitle": "Thor",
+        "phone": "+33444000444"
+    }
+    ,
+    {
+        "name": "Hawkeye",
+        "email": "clintbarton@gmail.com",
+        "imageUrl": "https://static.wikia.nocookie.net/marveldatabase/images/6/6c/Thunderbolts_Vol_4_1_Trading_Card_Variant_Textless.jpg/revision/latest/scale-to-width-down/1200?cb=20220622131243",
+        "jobTitle": "Hawkeye",
+        "phone": "+33555000555"
+    }
+    ,
+    {
+        "name": "Black Widow\"",
+        "email": "natasharomanoff@gmail.com",
+        "imageUrl": "https://www.previewsworld.com/SiteImage/MainImage/STL189316.jpg",
+        "jobTitle": "Black Widow",
+        "phone": "+33666000666"
+    }
+]
